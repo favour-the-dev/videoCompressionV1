@@ -1,6 +1,18 @@
 export type HybridMode = "quality" | "balanced" | "size";
 
-export type Resolution = "original" | "1080p" | "720p" | "480p";
+export type Resolution =
+  | "original"
+  | "4k"
+  | "2k"
+  | "1440p"
+  | "1080p"
+  | "900p"
+  | "720p"
+  | "540p"
+  | "480p"
+  | "360p"
+  | "240p"
+  | "144p";
 
 export interface CompressionConfig {
   hybridMode: HybridMode;
@@ -81,7 +93,15 @@ export const RESOLUTION_CONFIG: Record<
   { name: string; width: number; height: number } | null
 > = {
   original: null,
-  "1080p": { name: "1080p (1920x1080)", width: 1920, height: 1080 },
-  "720p": { name: "720p (1280x720)", width: 1280, height: 720 },
-  "480p": { name: "480p (854x480)", width: 854, height: 480 },
+  "4k": { name: "4K Ultra HD (3840x2160)", width: 3840, height: 2160 },
+  "2k": { name: "2K (2560x1440)", width: 2560, height: 1440 },
+  "1440p": { name: "1440p QHD (2560x1440)", width: 2560, height: 1440 },
+  "1080p": { name: "1080p Full HD (1920x1080)", width: 1920, height: 1080 },
+  "900p": { name: "900p HD+ (1600x900)", width: 1600, height: 900 },
+  "720p": { name: "720p HD (1280x720)", width: 1280, height: 720 },
+  "540p": { name: "540p qHD (960x540)", width: 960, height: 540 },
+  "480p": { name: "480p SD (854x480)", width: 854, height: 480 },
+  "360p": { name: "360p (640x360)", width: 640, height: 360 },
+  "240p": { name: "240p (426x240)", width: 426, height: 240 },
+  "144p": { name: "144p (256x144)", width: 256, height: 144 },
 };

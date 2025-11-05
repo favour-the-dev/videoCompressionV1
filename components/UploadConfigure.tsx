@@ -321,9 +321,19 @@ export function UploadConfigure({
                   <SelectItem value="original">
                     Original ({metadata?.width}x{metadata?.height})
                   </SelectItem>
-                  <SelectItem value="1080p">1080p (1920x1080)</SelectItem>
-                  <SelectItem value="720p">720p (1280x720)</SelectItem>
-                  <SelectItem value="480p">480p (854x480)</SelectItem>
+                  <SelectItem value="4k">4K Ultra HD (3840x2160)</SelectItem>
+                  <SelectItem value="2k">2K (2560x1440)</SelectItem>
+                  <SelectItem value="1440p">1440p QHD (2560x1440)</SelectItem>
+                  <SelectItem value="1080p">
+                    1080p Full HD (1920x1080)
+                  </SelectItem>
+                  <SelectItem value="900p">900p HD+ (1600x900)</SelectItem>
+                  <SelectItem value="720p">720p HD (1280x720)</SelectItem>
+                  <SelectItem value="540p">540p qHD (960x540)</SelectItem>
+                  <SelectItem value="480p">480p SD (854x480)</SelectItem>
+                  <SelectItem value="360p">360p (640x360)</SelectItem>
+                  <SelectItem value="240p">240p (426x240)</SelectItem>
+                  <SelectItem value="144p">144p (256x144)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
